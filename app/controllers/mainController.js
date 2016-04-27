@@ -1,12 +1,18 @@
 // JavaScript Document
 (function (){
-		 
-		   
+
+
 	var mainController = function ($scope, $location) {
-   
-	   $scope.showlist=function(){
-	   	$location.path("/application");
+
+	   $scope.Experience=function(){
+	   	$location.path("/Experience");
 	   }
+		 $scope.acheivements=function(){
+		 $location.path("/AboutMe");
+		}
+		$scope.background=function(){
+		 $location.path("/projects");
+		}
 	}
 mainController.$inject = ['$scope','$location'];
 
